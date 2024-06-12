@@ -25,7 +25,16 @@ function verificaSePalindroma (parola){
     }
 }
 
+// creo una variabile contenente il risultato della mia funzione
+let risultatoVerificaParola = verificaSePalindroma(parolaUtente);
+// stampo in console il risualtato della funzione
+console.log(risultatoVerificaParola);
 
+if(risultatoVerificaParola === true){
+    console.log("La tua parola è palindroma");
+}else{
+    console.log("La tua parola non è palindroma");
+}
 
 
 
