@@ -24,3 +24,14 @@ function somma (num1, num2){
     return num1 + num2;
 }
 
+// verifica pari o diapri
+function pariDispari (num){
+
+    if (num % 2 === 0){
+        return "pari"
+
+    }else{
+        return "dispari"
+    }
+}
+
