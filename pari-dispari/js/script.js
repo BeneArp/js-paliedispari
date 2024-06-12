@@ -10,10 +10,17 @@ const sceltaUtente = prompt("Scegli pari o dispari");
 // chiedo un numero all'utente
 const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
 
+console.log(numeroUtente);
 
-// FUNZIONE
+// FUNZIONI
 // realizza un numero random
 function randomNumber (min, max){
     // formula per genereare un numero random con minimo e massimo inclusi
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
+// somma
+function somma (num1, num2){
+    return num1 + num2;
+}
+
