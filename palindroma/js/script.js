@@ -14,15 +14,18 @@ console.log(parolaUtente);
 function verificaSePalindroma (parola){
     const parolaInvertita = parola.split("").reverse().join("");
 
-    // se la parola scritta al contrario è uguale alla parola originale
-    if(parola === parolaInvertita){
-        // la parola è palindroma
-        return true;
-    // al contrario se la parola scritta al contrario è diversa dalla parola originale
-    }else{
-        // la parola non è palindroma
-        return false;
-    }
+    // // se la parola scritta al contrario è uguale alla parola originale
+    // if(parola === parolaInvertita){
+    //     // la parola è palindroma
+    //     return true;
+    // // al contrario se la parola scritta al contrario è diversa dalla parola originale
+    // }else{
+    //     // la parola non è palindroma
+    //     return false;
+    // }
+
+    // condizione scritta con ternario
+    return parola === parolaInvertita ? true : false;
 }
 
 // creo una variabile contenente il risultato della mia funzione
@@ -30,11 +33,16 @@ let risultatoVerificaParola = verificaSePalindroma(parolaUtente);
 // stampo in console il risualtato della funzione
 console.log(risultatoVerificaParola);
 
-if(risultatoVerificaParola === true){
-    console.log("La tua parola è palindroma");
-}else{
-    console.log("La tua parola non è palindroma");
-}
+// if(risultatoVerificaParola === true){
+//     console.log("La tua parola è palindroma");
+// }else{
+//     console.log("La tua parola non è palindroma");
+// }
+
+// condizione output scritta con ternario
+const risultato = risultatoVerificaParola === true ? "La tua parola è palindroma" : "La tua parola non è palindroma";
+// stampo in console la risposta
+console.log(risultato);
 
 
 
