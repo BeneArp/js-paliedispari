@@ -47,3 +47,10 @@ console.log(numeroSommato);
 const risultato = pariDispari(numeroSommato);
 console.log(risultato);
 
+
+// condizione per decidere chi vince
+if (sceltaUtente === risultato){
+    console.log("Hai vinto!");
+}else{
+    console.log("Sei scarso!");
+}
