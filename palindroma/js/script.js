@@ -2,6 +2,8 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
+
+
 // creo una variabile con la parola iserita dall'utente tramite prompt
 const parolaUtente = prompt("Inserisci una parola");
 console.log(parolaUtente);
@@ -28,10 +30,14 @@ function verificaSePalindroma (parola){
     return parola === parolaInvertita ? true : false;
 }
 
+
+
 // creo una variabile contenente il risultato della mia funzione
 let risultatoVerificaParola = verificaSePalindroma(parolaUtente);
 // stampo in console il risualtato della funzione
 console.log(risultatoVerificaParola);
+
+
 
 // if(risultatoVerificaParola === true){
 //     console.log("La tua parola è palindroma");
