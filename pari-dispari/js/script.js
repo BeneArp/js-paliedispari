@@ -35,3 +35,15 @@ function pariDispari (num){
     }
 }
 
+// creo una variabile contenente il numero generato dalla funzione
+const numeroPc = randomNumber(1, 5);
+console.log(numeroPc);
+
+// richiamo la funzione per fare la somma
+const numeroSommato = somma(numeroUtente, numeroPc);
+console.log(numeroSommato);
+
+// risultato numero pari o dispari
+const risultato = pariDispari(numeroSommato);
+console.log(risultato);
+
