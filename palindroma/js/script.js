@@ -9,3 +9,25 @@ console.log(parolaUtente);
 
 
 
+
+
+
+
+
+// prove verifica parola palindroma
+
+// parola random inserita dell'utente
+const miaParola = "magnifico";
+console.log(miaParola);
+
+// divido la parola inserita dall'utente in un array con di caratteri
+const miaParolaScomposta = miaParola.split("");
+console.log(miaParola, miaParolaScomposta);
+
+// dispongo i caratteri dell'array al contrario
+const miaParolaScompostaReverse = miaParolaScomposta.reverse();
+console.log(miaParolaScompostaReverse);
+
+// ricompongo la parola scritta al contrario
+const miaParolaReverse = miaParolaScompostaReverse.join("");
+console.log(miaParolaReverse);
